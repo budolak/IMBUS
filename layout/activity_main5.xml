@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#00008577"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_baseline_menu_24" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Drivers"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="3dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:srcCompat="@drawable/img1" />
+
+        <LinearLayout
+            android:layout_marginTop="45dp"
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <ImageView
+                    android:id="@+id/driver1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/profile"
+                    />
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_toRightOf="@+id/driver1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Id: 80745829"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_below="@+id/txt1"
+                    android:layout_toRightOf="@+id/driver1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Ali Rehman"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_below="@+id/txt2"
+                    android:layout_toRightOf="@+id/driver1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact no: 0300-XXXXXX"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <Button
+                    android:id="@+id/callbtn1"
+                    android:layout_below="@id/txt3"
+                    android:layout_toRightOf="@id/driver1"
+                    android:onClick="Call1"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Call driver"
+                    android:textSize="8sp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/driver2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/driver1"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/profile"
+
+
+                    />
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_toRightOf="@+id/driver2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Id: 697514261"
+                    android:layout_below="@+id/driver1"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_below="@+id/txt4"
+                    android:layout_toRightOf="@+id/driver2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Waheed Ullah"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_below="@+id/txt5"
+                    android:layout_toRightOf="@+id/driver1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact no: 0300-XXXXXX"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <Button
+                    android:id="@+id/callbtn2"
+                    android:layout_below="@id/txt6"
+                    android:layout_toRightOf="@id/driver1"
+                    android:onClick="Call2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Call driver"
+                    android:textSize="8sp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/driver3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/driver2"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/profile"
+
+                    />
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_toRightOf="@+id/driver3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Id: 6108377290"
+                    android:layout_below="@+id/driver2"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/txt8"
+                    android:layout_below="@+id/txt7"
+                    android:layout_toRightOf="@+id/driver3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Malik Hamza"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/txt9"
+                    android:layout_below="@+id/txt8"
+                    android:layout_toRightOf="@+id/driver3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact no: 0300-XXXXXX"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <Button
+                    android:id="@+id/callbtn3"
+                    android:layout_below="@id/txt9"
+                    android:layout_toRightOf="@id/driver1"
+                    android:onClick="Call3"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Call driver"
+                    android:textSize="8sp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <ImageView
+                    android:id="@+id/driver4"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/driver3"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/profile"
+                    />
+                <TextView
+                    android:id="@+id/txt10"
+                    android:layout_toRightOf="@+id/driver4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Id: 92387691"
+                    android:layout_below="@+id/driver3"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/txt11"
+                    android:layout_below="@+id/txt10"
+                    android:layout_toRightOf="@+id/driver4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Yusra Izhar"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/txt12"
+                    android:layout_below="@+id/txt11"
+                    android:layout_toRightOf="@+id/driver4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact no: 0300-XXXXXX"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <Button
+                    android:id="@+id/callbtn4"
+                    android:layout_below="@id/txt12"
+                    android:layout_toRightOf="@id/driver1"
+                    android:onClick="Call4"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Call driver"
+                    android:textSize="8sp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
